@@ -1,0 +1,57 @@
+{% extends 'web/base.html' %}
+
+
+{% block content %}
+	<main>
+        <!--? Hero Start -->
+        <div class="slider-area2">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap hero-cap2 pt-50 text-center">
+                                <h2>Form</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+        <!--? Blog Area Start-->
+        <section class="blog_area section-padding">
+            <div class="container">
+                <div class="row">            
+                    	<div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
+                    		<div class="card-top">
+                    			<h3>Complain Form </h3>
+                    		</div>
+                    		
+                    	<p>ဝန်ဆောင်မှုပိုင်းဆိုင်ရာ&nbsp;အဆင်မပြေမှုများကို<br>တိုင်ကြားရန်<br>ဖုန်းလိုင်းမှတဆင့်ဆက်သွယ်လိုပါက<br>
+
+						01-4705100 လိုင်းခွဲ(၉)</p>
+					 <a href="{% url 'complain' %}" class="btn hero-btn mb-10" data-animation="fadeInUp" data-delay=".8s">တိုင်ကြားရန်</a>
+                    	</div>
+                    	
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
+                            <div class="card-top">
+                                <h3>Billing Form</h3>
+                                
+                            </div>
+                            <p>Bill ပေးဆောင်ရန် ဒီနေမှာ ပေးဆောင်ပါ။</p>
+                                <a href="{% url 'billing' %}" class="btn hero-btn mb-10" data-animation="fadeInUp" data-delay=".8s">ဘေလ်ဆောင်ရန်</a>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
+                            <div class="card-top">
+                                <h3>New Installation</h3>
+                                <a href="{% url 'newinstallation' %}" class="btn hero-btn mb-10" data-animation="fadeInUp" data-delay=".8s">စက်အသစ်တက်ရန်</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Blog Area End -->
+    </main>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends 'web/base.html' %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+
+	<main>
+
+        <!--? Hero Start -->
+        <div class="slider-area2">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap hero-cap2 pt-50 text-center">
+                                <h2>Billing Form</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         {% include 'web/messages.html' %}
+        <!-- Hero End -->
+        <!--? Blog Area Start-->
+        <section class="blog_area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="card">
+
+				<form method="POST" enctype="multipart/form-data" class="col-sm-12 col-form-label">
+                    {% csrf_token %}
+				    {{ form|crispy }}
+                    <button type="submit" class="btn btn-primary">Save</button>        
+				</form>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Area End -->
+    </main>
+{% endblock %}
